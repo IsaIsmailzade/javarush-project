@@ -12,7 +12,12 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
-
+        Scanner scanner = new Scanner(System.in);
+        Path path = Path.of(scanner.nextLine());
+        List<String> strings = Files.readAllLines(path);
+        for (int i = 0; i < strings.size(); i += 2) {
+            System.out.println(strings.get(i));
+        }
     }
 }
 
