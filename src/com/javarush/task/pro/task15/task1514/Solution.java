@@ -14,8 +14,10 @@ public class Solution {
         String str2 = scanner.nextLine();
         Path path1 = Path.of(str1);
         Path path2 = Path.of(str2);
-        Path rel = path1.relativize(path2);
-        System.out.println(rel);
+        try {
+            Path rel = path1.relativize(path2);
+            System.out.println(rel);
+        } catch (IllegalArgumentException illegalArgumentException) {}
     }
 }
 
