@@ -11,7 +11,16 @@ import java.net.URLConnection;
 public class Solution {
     public static void main(String[] args) throws IOException {
         URL url = new URL("http://httpbin.org/post");
-        //напишите тут ваш код
+        URLConnection urlConnection = url.openConnection();
+        urlConnection.setDoOutput(true);
+        try (OutputStream outputStream = urlConnection.getOutputStream();
+             PrintStream printStream = new PrintStream(outputStream)) {
+            printStream.println(23);
+        }
+
+        try (InputStream inputStream = urlConnection.getInputStream();
+             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream))) {
+            while (bufferedReader.ready()) System.out.println(bufferedReader.readLine());
+        }
     }
 }
-
