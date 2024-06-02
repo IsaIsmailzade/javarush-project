@@ -11,6 +11,9 @@ import java.net.URL;
 public class Solution {
     public static void main(String[] args) throws IOException {
         URL url = new URL("https://javarush.ru/api/1.0/rest/projects");
-
+        InputStream inputStream = url.openStream();
+        byte[] bytes = inputStream.readAllBytes();
+        String s = new String(bytes);
+        System.out.println(s);
     }
 }
