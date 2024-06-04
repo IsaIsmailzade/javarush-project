@@ -1,5 +1,7 @@
 package com.javarush.task.pro.task16.task1602;
 
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -27,6 +29,12 @@ public class Solution {
     }
 
     static void fixDate(List<Date> brokenDates) {
-        //напишите тут ваш код
+        for (Date d : brokenDates) {
+            Date date = new Date();
+            if (d.after(date)) {
+                d.setYear(d.getYear() - 1900);
+                d.setMonth(d.getMonth() - 1);
+            }
+        }
     }
 }
