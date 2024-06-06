@@ -15,7 +15,8 @@ public class Solution {
     }
 
     static Instant getMaxFromMilliseconds() {
-        return Instant.MAX;
+        Instant maxInstant = Instant.ofEpochMilli(Long.MAX_VALUE);
+        return maxInstant;
     }
 
     static Instant getMaxFromSeconds() {
