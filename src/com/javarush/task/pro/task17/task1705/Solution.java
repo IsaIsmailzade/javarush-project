@@ -18,10 +18,10 @@ public class Solution {
     public static void runWorkingProcess() {
         for (Object j : astronauts) {
             if (j instanceof Human) {
-                pilot(new Human());
+                pilot((Human) j);
             } else if (j instanceof Dog) {
-                createDirection(new Dog());
-            } else research(new Cat());
+                createDirection((Dog) j);
+            } else research((Cat) j);
         }
     }
 
