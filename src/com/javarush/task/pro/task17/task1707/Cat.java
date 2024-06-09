@@ -5,6 +5,6 @@ public class Cat extends Pet {
 
     public void printInfo() {
         super.printInfo();
-        System.out.println("Я не люблю людей");
+        System.out.println(CAT);
     }
 }
