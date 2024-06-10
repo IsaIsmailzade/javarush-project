@@ -9,25 +9,15 @@ import java.util.Date;
 
 public class Solution {
 
-    static Date birthDate = new Date(106, 0, 4);;
+    static Date birthDate;
 
     public static void main(String[] args) {
         System.out.println(getDayOfWeek(birthDate));
     }
 
     static String getDayOfWeek(Date date) {
-        if (date.getDay() == 1) {
-            return "Понедельник";
-        } else if (date.getDay() == 2) {
-            return "Вторник";
-        } else if (date.getDay() == 3) {
-            return "Среда";
-        } else if (date.getDay() == 4) {
-            return "Четверг";
-        } else if (date.getDay() == 5) {
-            return "Пятница";
-        } else if (date.getDay() == 6) {
-            return "Суббота";
-        } else return "Воскресенье";
+        //напишите тут ваш код
+
+        return null;
     }
 }
