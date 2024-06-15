@@ -11,13 +11,13 @@ public class SymbolGame extends Game {
 
     public void initialize() {
         setScreenSize(8, 3);
-        setCellValueEx(0, 1, Color.ORANGE, "J", Color.BLACK);
-        setCellValueEx(1, 1, Color.ORANGE, "A", Color.BLACK);
-        setCellValueEx(2, 1, Color.ORANGE, "V", Color.BLACK);
-        setCellValueEx(3, 1, Color.ORANGE, "A", Color.BLACK);
-        setCellValueEx(4, 1, Color.ORANGE, "R", Color.BLACK);
-        setCellValueEx(5, 1, Color.ORANGE, "U", Color.BLACK);
-        setCellValueEx(6, 1, Color.ORANGE, "S", Color.BLACK);
-        setCellValueEx(7, 1, Color.ORANGE, "H", Color.BLACK);
+        setCellValueEx(0, 1, Color.ORANGE, "J");
+        setCellValueEx(1, 1, Color.ORANGE, "A");
+        setCellValueEx(2, 1, Color.ORANGE, "V");
+        setCellValueEx(3, 1, Color.ORANGE, "A");
+        setCellValueEx(4, 1, Color.ORANGE, "R");
+        setCellValueEx(5, 1, Color.ORANGE, "U");
+        setCellValueEx(6, 1, Color.ORANGE, "S");
+        setCellValueEx(7, 1, Color.ORANGE, "H");
     }
 }
