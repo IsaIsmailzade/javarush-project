@@ -21,6 +21,6 @@ public class Randomizer extends Game {
 
     @Override
     public void onTurn(int step) {
-        //напишите тут ваш код
+        setCellNumber(1, 1, getRandomNumber(100));
     }
 }
